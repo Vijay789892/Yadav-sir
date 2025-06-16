@@ -1,0 +1,1217 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Promo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e1bee7);
+      text-align: center;
+      touch-action: pan-y; /* Allow vertical touch scrolling */
+    }
+
+    .slider {
+      width: 100%;
+      max-width: 380px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+      width: 100%;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      position: relative;
+    }
+
+    .slide-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .app-card {
+      margin: 30px auto;
+      max-width: 350px;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      border-radius: 10px;
+      padding: 4px 20px;
+      box-shadow: 0 10px 25px rgba(0, 114, 255, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 2px solid #00c6ff;
+      color: white;
+    }
+
+    .app-logo {
+      width: 55px;
+      height: 55px;
+      border-radius: 12px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .app-name {
+      font-size: 19px;
+      font-weight: 600;
+      flex: 1;
+      text-align: left;
+      padding-left: 10px;
+      color: #ffffff;
+    }
+
+    .install-btn {
+      background: #003cb3; /* गाढ़ा नीला */
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 0.3s ease;
+    }
+
+    .install-btn:hover {
+      background: #002080; /* और गहरा नीला hover पर */
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #ccc;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .dot.active {
+      background: #0072ff;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Updated slider content -->
+<div class="slider">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEginSJ4UspxjM15Zp5aJz11QwhFapPGdn1FUV3mZ6S7JFzA0FUwFUIWeGxNnJm_2YzDt445Vw_dPW4-yTcJZnPZSMpaI3FEz6XdWkSsarmhkAlZ2hdi5CCRv0r0DWwdDU9gVmJgEJoYFqfxV078uZ2YJWf6axOSGFPdCrgie2qnfPoVIGAjLlxY1j-bnPDm/s800/IMG-20250418-WA0023.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEginSJ4UspxjM15Zp5aJz11QwhFapPGdn1FUV3mZ6S7JFzA0FUwFUIWeGxNnJm_2YzDt445Vw_dPW4-yTcJZnPZSMpaI3FEz6XdWkSsarmhkAlZ2hdi5CCRv0r0DWwdDU9gVmJgEJoYFqfxV078uZ2YJWf6axOSGFPdCrgie2qnfPoVIGAjLlxY1j-bnPDm/s800/IMG-20250418-WA0023.jpg" alt="Ad 1">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsTSHqu83hAbjpREWhNSKkE42YS97crvC9vqC6a_yT1DKF9CA2Ze1bMLwxNpMDbXV6ZRCucf6qh9TORM6f1_tq5a-VRfx3uMDnsx5YNoALK0w7OORi7gte9QsIEuhz2_LqolIlFBm61TddVv3JtHrOUgc1h5Mbq4rwdajIiQR1BwFN8h-Ai5LVR8Sv9KU/s320/%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A4%AF%20%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%B5_20241230_125918_2.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEginSJ4UspxjM15Zp5aJz11QwhFapPGdn1FUV3mZ6S7JFzA0FUwFUIWeGxNnJm_2YzDt445Vw_dPW4-yTcJZnPZSMpaI3FEz6XdWkSsarmhkAlZ2hdi5CCRv0r0DWwdDU9gVmJgEJoYFqfxV078uZ2YJWf6axOSGFPdCrgie2qnfPoVIGAjLlxY1j-bnPDm/s800/IMG-20250418-WA0023.jpg" alt="Ad 2"> <!-- Replace with actual image URL if needed -->
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjudMFtNpRU_s0-aqCvyaki0E7pJdCt07ERv_9D5y2d8mkqwpfkb8PV-shiZevAx24nUz93ZFDErbz6tHnWUVtgV0TKraVHxFLR-U4sUnTdA64COFCWWLeCM9eQFihNzJvtfGJzzLZOxy9EFmoLYeaMXaTEjEQn8DaXHfn77pRwrtK_S_cWAIy1FuqjW7yo/s500/IMG-20250410-WA0005.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjudMFtNpRU_s0-aqCvyaki0E7pJdCt07ERv_9D5y2d8mkqwpfkb8PV-shiZevAx24nUz93ZFDErbz6tHnWUVtgV0TKraVHxFLR-U4sUnTdA64COFCWWLeCM9eQFihNzJvtfGJzzLZOxy9EFmoLYeaMXaTEjEQn8DaXHfn77pRwrtK_S_cWAIy1FuqjW7yo/s500/IMG-20250410-WA0005.jpg" alt="Ad 3">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjudMFtNpRU_s0-aqCvyaki0E7pJdCt07ERv_9D5y2d8mkqwpfkb8PV-shiZevAx24nUz93ZFDErbz6tHnWUVtgV0TKraVHxFLR-U4sUnTdA64COFCWWLeCM9eQFihNzJvtfGJzzLZOxy9EFmoLYeaMXaTEjEQn8DaXHfn77pRwrtK_S_cWAIy1FuqjW7yo/s320/IMG-20250410-WA0005.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjudMFtNpRU_s0-aqCvyaki0E7pJdCt07ERv_9D5y2d8mkqwpfkb8PV-shiZevAx24nUz93ZFDErbz6tHnWUVtgV0TKraVHxFLR-U4sUnTdA64COFCWWLeCM9eQFihNzJvtfGJzzLZOxy9EFmoLYeaMXaTEjEQn8DaXHfn77pRwrtK_S_cWAIy1FuqjW7yo/s320/IMG-20250410-WA0005.jpg" alt="Ad 4">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmJAvFgpZM46f2dtilL6Mk5mvpCOy1BqcsH0kcTkKgteQiwnRZl_WvgJHjhWzFp9IPkD8WGp6ZQcQIEPyfoZyzmizXs_PzE34JGdUbOYzQM_aqnJD-3rCjllvpmEehB_dk58vkpE6MdSLX6Zw_QeNz57OsHm3pEC8EltFtCiAZFO-Imkrly6Y9R1SfOz1A/s1080/IMG-20250402-WA0012.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmJAvFgpZM46f2dtilL6Mk5mvpCOy1BqcsH0kcTkKgteQiwnRZl_WvgJHjhWzFp9IPkD8WGp6ZQcQIEPyfoZyzmizXs_PzE34JGdUbOYzQM_aqnJD-3rCjllvpmEehB_dk58vkpE6MdSLX6Zw_QeNz57OsHm3pEC8EltFtCiAZFO-Imkrly6Y9R1SfOz1A/s1080/IMG-20250402-WA0012.jpg" alt="Ad 5">
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGsTSHqu83hAbjpREWhNSKkE42YS97crvC9vqC6a_yT1DKF9CA2Ze1bMLwxNpMDbXV6ZRCucf6qh9TORM6f1_tq5a-VRfx3uMDnsx5YNoALK0w7OORi7gte9QsIEuhz2_LqolIlFBm61TddVv3JtHrOUgc1h5Mbq4rwdajIiQR1BwFN8h-Ai5LVR8Sv9KU/s808/%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A4%AF%20%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%B5_20241230_125918_2.jpg" class="slide-link" target="_blank">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEginSJ4UspxjM15Zp5aJz11QwhFapPGdn1FUV3mZ6S7JFzA0FUwFUIWeGxNnJm_2YzDt445Vw_dPW4-yTcJZnPZSMpaI3FEz6XdWkSsarmhkAlZ2hdi5CCRv0r0DWwdDU9gVmJgEJoYFqfxV078uZ2YJWf6axOSGFPdCrgie2qnfPoVIGAjLlxY1j-bnPDm/s800/IMG-20250418-WA0023.jpg" alt="Ad 6">
+      </a>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+</div>
+
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById('slides');
+    const dotsContainer = document.getElementById('dots');
+    const totalSlides = slides.children.length;
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let autoSlideInterval;
+
+    // Create dots for navigation
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    // Initialize auto slide
+    startAutoSlide();
+
+    function goToSlide(slideIndex) {
+      index = slideIndex;
+      updateSlider();
+    }
+
+    function updateSlider() {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Update active dot
+      const dots = document.querySelectorAll('.dot');
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      index = (index + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(nextSlide, 2000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(autoSlideInterval);
+    }
+
+    // Touch event handlers for swipe
+    slides.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      stopAutoSlide();
+    }, {passive: true});
+
+    slides.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+      startAutoSlide();
+    }, {passive: true});
+
+    function handleSwipe() {
+      const threshold = 50; // Minimum swipe distance
+      if (touchEndX < touchStartX - threshold) {
+        // Swipe left - next slide
+        nextSlide();
+      } else if (touchEndX > touchStartX + threshold) {
+        // Swipe right - previous slide
+        prevSlide();
+      }
+    }
+
+    // Mouse event handlers for desktop
+    slides.addEventListener('mousedown', (e) => {
+      touchStartX = e.clientX;
+      stopAutoSlide();
+    });
+
+    slides.addEventListener('mouseup', (e) => {
+      touchEndX = e.clientX;
+      handleSwipe();
+      startAutoSlide();
+    });
+
+    slides.addEventListener('mouseleave', () => {
+      startAutoSlide();
+    });
+
+    function installApp() {
+      window.location.href = "https://yourappdownloadlink.com"; // यहाँ अपने App का लिंक लगाएं
+    }
+  </script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Task Coin Game</title>
+    <!-- AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxx"
+            crossorigin="anonymous"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .coin-counter {
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .coin-counter::before {
+            content: '🪙';
+            font-size: 32px;
+            margin-right: 10px;
+        }
+
+        .coin-counter::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        .daily-info {
+            background: rgba(255,255,255,0.95);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .daily-info h3 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .reset-timer {
+            color: #666;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.95);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .task {
+            background: rgba(255,255,255,0.95);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: slideUp 0.6s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .task:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .task.completed {
+            background: rgba(40, 167, 69, 0.1);
+            border-color: rgba(40, 167, 69, 0.3);
+        }
+
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .task-title {
+            font-weight: 600;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .task-coins {
+            background: linear-gradient(45deg, #ffd89b, #19547b);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .task-coins::before {
+            content: '🪙';
+        }
+
+        /* AdSense Banner Styles */
+        .ad-container {
+            width: 100%;
+            min-height: 90px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            position: relative;
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border: 2px dashed #dee2e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .ad-container:hover {
+            transform: scale(1.01);
+            border-color: #667eea;
+        }
+
+        .ad-placeholder {
+            color: #6c757d;
+            font-size: 14px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .ad-container .adsbygoogle {
+            width: 100%;
+            height: 90px;
+            border-radius: 10px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-width: 120px;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255,255,255,0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+        }
+
+        button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .visit-btn {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .visit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .confirm-btn {
+            background: linear-gradient(45deg, #28a745, #1e7e34);
+            color: white;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .confirm-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+        }
+
+        button:disabled {
+            background: #aaa !important;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 2px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .timer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
+        }
+
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            51%, 100% {
+                opacity: 0.7;
+            }
+        }
+
+        .instruction-message {
+            animation: slideInDown 0.5s ease-out;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .coin-animation {
+            animation: coinFlip 0.6s ease-in-out;
+        }
+
+        @keyframes coinFlip {
+            0% { transform: rotateY(0deg) scale(1); }
+            50% { transform: rotateY(180deg) scale(1.1); }
+            100% { transform: rotateY(360deg) scale(1); }
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            75% {
+                transform: translateX(5px);
+            }
+        }
+
+        .new-day-banner {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @media (max-width: 600px) {
+            .btns {
+                flex-direction: column;
+            }
+            button {
+                min-width: 100%;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .coin-counter {
+                font-size: 24px;
+            }
+            .ad-container {
+                min-height: 70px;
+            }
+        }
+
+.rules-btn {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+    transition: transform 0.3s ease;
+}
+
+.rules-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
+
+.rules-dialog {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+
+.dialog-content {
+    position: relative;
+    padding: 20px;
+}
+
+.dialog-content h3 {
+    color: #2d3436;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.rule-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+}
+
+.rule-card.warning {
+    background: linear-gradient(45deg, #fff9db, #ffe3e3);
+    border-color: #ff8787;
+}
+
+.rule-icon {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rule-card h4 {
+    color: #2d3436;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.rule-card ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+.rule-card li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.progress-info {
+    margin: 25px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4cd137, #44bd32);
+    border-radius: 5px;
+}
+
+.close-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #4cd137;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #44bd32;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Daily Task Coin Game</h1>
+        
+        <div class="coin-counter" id="coinCounter">
+            Total Coins: <span id="coinCount">0</span>
+        </div>
+
+        <div class="daily-info">
+            <h3>📅 Today's Progress</h3>
+            <div class="reset-timer" id="resetTimer">Next reset in: --:--:--</div>
+        </div>
+        
+        <div class="stats">
+
+            <div class="stat-card">
+                <div class="stat-number" id="completedToday">0</div>
+                <div class="stat-label">Completed Today</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalTasks">1</div>
+                <div class="stat-label">Total Tasks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="earnedToday">0</div>
+                <div class="stat-label">Coins Earned Today</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalEarned">0</div>
+                <div class="stat-label">Total Coins Earned</div>
+            </div>
+        </div>
+        
+        <div id="newDayBanner" class="new-day-banner" style="display: none;">
+            🎉 New Day Started! All tasks are now available again! 🎉
+        </div>
+        
+        <div id="taskList"></div>
+    </div>
+
+    <script>
+        const tasks = [
+    { id: 1, title: "Visit Link 1", coins: 2, link: "https://www.profitableratecpm.com/vvm8rcdz?key=567b628b10ec706cc735f5a07182a470" }
+  
+];
+
+        // AdSense banner configurations
+        const bannerAds = [
+            { 
+                html: `<div class="ad-container">
+                          <ins class="adsbygoogle"
+                               style="display:block;width:100%;height:90px;"
+                               data-ad-client="ca-pub-xxxxxxxxxx"
+                               data-ad-slot="1111111111"
+                               data-ad-format="rectangle"
+                               data-full-width-responsive="true">
+                          </ins>
+                       </div>`,
+                link: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjudMFtNpRU_s0-aqCvyaki0E7pJdCt07ERv_9D5y2d8mkqwpfkb8PV-shiZevAx24nUz93ZFDErbz6tHnWUVtgV0TKraVHxFLR-U4sUnTdA64COFCWWLeCM9eQFihNzJvtfGJzzLZOxy9EFmoLYeaMXaTEjEQn8DaXHfn77pRwrtK_S_cWAIy1FuqjW7yo/s500/IMG-20250410-WA0005.jpg",
+                script: `
+                    setTimeout(() => {
+                        try {
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            console.log('AdSense Ad 1 loaded');
+                        } catch(e) {
+                            console.log('AdSense loading failed for Ad 1:', e);
+                        }
+                    }, 500);
+                `
+            }
+            
+
+        ];
+
+
+        // Game state variables - stored in memory for this session
+        let gameData = {
+            totalCoins: 0,
+            completedTasks: {},
+            dailyEarnings: {},
+            totalEarnings: 0,
+            lastResetDate: null
+        };
+        
+        let taskTimers = {};
+        let resetTimerInterval = null;
+
+        // DOM elements
+        const coinDisplay = document.getElementById("coinCount");
+        const coinCounter = document.getElementById("coinCounter");
+        const taskList = document.getElementById("taskList");
+        const completedTodayDisplay = document.getElementById("completedToday");
+        const earnedTodayDisplay = document.getElementById("earnedToday");
+        const totalEarnedDisplay = document.getElementById("totalEarned");
+        const resetTimerDisplay = document.getElementById("resetTimer");
+        const newDayBanner = document.getElementById("newDayBanner");
+
+        // Date helper functions
+        function getTodayString() {
+            return new Date().toLocaleDateString('en-US');
+        }
+
+        function getNextMidnight() {
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            return tomorrow;
+        }
+
+        function formatTimeUntilReset() {
+            const now = new Date();
+            const midnight = getNextMidnight();
+            const diff = midnight - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        // Check if it's a new day and reset tasks
+        function checkForNewDay() {
+            const today = getTodayString();
+            
+            if (gameData.lastResetDate && gameData.lastResetDate !== today) {
+                // New day detected - show banner and reset tasks
+                newDayBanner.style.display = 'block';
+                setTimeout(() => {
+                    newDayBanner.style.display = 'none';
+                }, 5000);
+                
+                // Reset daily tasks but keep total coins
+                gameData.completedTasks = {};
+                showNotification("🌅 New day started! Tasks are now available again!");
+            }
+            
+            gameData.lastResetDate = today;
+        }
+
+        // Initialize game
+        function initGame() {
+            checkForNewDay();
+            updateDisplay();
+            renderTasks();
+            startResetTimer();
+        }
+
+        function startResetTimer() {
+            if (resetTimerInterval) {
+                clearInterval(resetTimerInterval);
+            }
+            
+            resetTimerInterval = setInterval(() => {
+                resetTimerDisplay.textContent = `Next reset in: ${formatTimeUntilReset()}`;
+                
+                // Check if it's midnight (new day)
+                const now = new Date();
+                if (now.getHours() === 0 && now.getMinutes() === 0 && now.getSeconds() === 0) {
+                    checkForNewDay();
+                    renderTasks(); // Re-render tasks for new day
+                }
+            }, 1000);
+            
+            // Initial display
+            resetTimerDisplay.textContent = `Next reset in: ${formatTimeUntilReset()}`;
+        }
+
+        function updateCoins(amount) {
+            gameData.totalCoins += amount;
+            gameData.totalEarnings += amount;
+            coinDisplay.textContent = gameData.totalCoins;
+            coinCounter.classList.add('coin-animation');
+            setTimeout(() => coinCounter.classList.remove('coin-animation'), 600);
+
+            const today = getTodayString();
+            gameData.dailyEarnings[today] = (gameData.dailyEarnings[today] || 0) + amount;
+            updateDisplay();
+            showNotification(`+${amount} coins earned! 🪙`);
+        }
+
+        function markTaskDone(id) {
+            const today = getTodayString();
+            gameData.completedTasks[id] = today;
+            updateDisplay();
+        }
+
+        function isTaskCompletedToday(id) {
+            const today = getTodayString();
+            return gameData.completedTasks[id] === today;
+        }
+
+        function updateDisplay() {
+            const today = getTodayString();
+            const completedToday = Object.values(gameData.completedTasks).filter(date => date === today).length;
+            const earnedToday = gameData.dailyEarnings[today] || 0;
+
+            completedTodayDisplay.textContent = completedToday;
+            earnedTodayDisplay.textContent = earnedToday;
+            totalEarnedDisplay.textContent = gameData.totalEarnings;
+            coinDisplay.textContent = gameData.totalCoins;
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            setTimeout(() => notification.classList.add('show'), 100);
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => document.body.removeChild(notification), 300);
+            }, 3000);
+        }
+
+        function renderTasks() {
+            // Clear existing tasks
+            taskList.innerHTML = '';
+
+            tasks.forEach((task, index) => {
+                const taskDiv = document.createElement("div");
+                taskDiv.className = "task";
+                taskDiv.style.animationDelay = `${index * 0.1}s`;
+
+                const taskCompleted = isTaskCompletedToday(task.id);
+                if (taskCompleted) {
+                    taskDiv.classList.add('completed');
+                }
+
+                const taskHeader = document.createElement("div");
+                taskHeader.className = "task-header";
+
+                const title = document.createElement("div");
+                title.className = "task-title";
+                title.textContent = task.title;
+
+                const coinBadge = document.createElement("div");
+                coinBadge.className = "task-coins";
+                coinBadge.textContent = `+${task.coins}`;
+
+                taskHeader.appendChild(title);
+                taskHeader.appendChild(coinBadge);
+
+                // Create AdSense banner ad
+                const bannerAd = document.createElement("div");
+                bannerAd.innerHTML = bannerAds[index % bannerAds.length].html;
+
+                // Load AdSense script for this ad
+                setTimeout(() => {
+                    eval(bannerAds[index % bannerAds.length].script);
+                }, index * 200);
+
+                const btnContainer = document.createElement("div");
+                btnContainer.className = "btns";
+
+                const visitBtn = document.createElement("button");
+                visitBtn.className = "visit-btn";
+                visitBtn.textContent = "🔗 Visit Link";
+                let startTime = null;
+
+                const confirmBtn = document.createElement("button");
+                confirmBtn.className = "confirm-btn";
+                confirmBtn.textContent = "Main aa gaya hoon";
+                confirmBtn.disabled = true;
+
+                const progressBar = document.createElement("div");
+                progressBar.className = "progress-bar";
+                const progressFill = document.createElement("div");
+                progressFill.className = "progress-fill";
+                progressBar.appendChild(progressFill);
+
+                if (taskCompleted) {
+                    visitBtn.disabled = true;
+                    visitBtn.textContent = "✅ Completed Today";
+                    confirmBtn.disabled = true;
+                    confirmBtn.textContent = "✅ Done Today";
+                    confirmBtn.style.background = "#28a745";
+                    progressFill.style.width = "100%";
+                }
+
+                visitBtn.onclick = () => {
+                    if (taskCompleted) return;
+                    
+                    const newTab = window.open(task.link, "_blank");
+                    startTime = Date.now();
+                    visitBtn.disabled = true;
+                    visitBtn.textContent = "🔗 Ads Opened - Wait 5s";
+
+                    const instruction = document.createElement("div");
+                    instruction.className = "instruction-message";
+                    instruction.innerHTML = `
+                        <div style="background: linear-gradient(45deg, #ff6b6b, #feca57); color: white; padding: 10px; border-radius: 10px; margin: 10px 0; text-align: center; font-weight: bold; animation: pulse 1.5s infinite;">
+                            📢 Ads page mein 5 second tak rukiye, phir yahan wapas aakar "Main aa gaya hoon" dabayiye
+                        </div>
+                    `;
+                    btnContainer.insertBefore(instruction, btnContainer.firstChild);
+
+                    confirmBtn.disabled = true;
+                    confirmBtn.style.background = "#aaa";
+                    confirmBtn.textContent = "Wait... Ads mein rukiye";
+
+                    let timeLeft = 5;
+                    const countdownTimer = setInterval(() => {
+                        timeLeft--;
+                        confirmBtn.textContent = `Ads mein rukiye (${timeLeft}s)`;
+                        progressFill.style.width = `${((5 - timeLeft) / 5) * 100}%`;
+
+                        if (timeLeft <= 0) {
+                            clearInterval(countdownTimer);
+                            confirmBtn.textContent = "Main aa gaya hoon ✅";
+                            confirmBtn.disabled = false;
+                            confirmBtn.style.background = "linear-gradient(45deg, #28a745, #1e7e34)";
+                            progressFill.style.width = "100%";
+                            confirmBtn.style.animation = "blink 1s infinite";
+
+                            if (instruction.parentNode) {
+                                instruction.remove();
+                            }
+                            showNotification("✅ Ab aap coin claim kar sakte hain!");
+                        }
+                    }, 1000);
+
+                    taskTimers[task.id] = countdownTimer;
+                };
+
+                confirmBtn.onclick = () => {
+                    if (taskCompleted) return;
+                    
+                    if (!startTime) {
+                        showNotification("⚠️ Pehle 'Visit Link' button ko click kariye!");
+                        confirmBtn.style.animation = "shake 0.5s ease-in-out";
+                        setTimeout(() => confirmBtn.style.animation = "", 500);
+                        return;
+                    }
+
+                    const diff = (Date.now() - startTime) / 1000;
+
+                    if (!confirmBtn.disabled && diff >= 5) {
+                        updateCoins(task.coins);
+                        markTaskDone(task.id);
+                        taskDiv.classList.add('completed');
+                        visitBtn.disabled = true;
+                        visitBtn.textContent = "✅ Completed Today";
+                        confirmBtn.disabled = true;
+                        confirmBtn.textContent = "✅ Coin Claimed";
+                        confirmBtn.style.background = "#28a745";
+                        confirmBtn.style.animation = "none";
+
+                        if (taskTimers[task.id]) {
+                            clearInterval(taskTimers[task.id]);
+                        }
+                        showNotification(`🎉 Congratulations! +${task.coins} coins earned! Tomorrow you can earn again!`);
+                    } else if (confirmBtn.disabled) {
+                        const remaining = Math.ceil(5 - diff);
+                        showNotification(`⏰ Abhi ${remaining} second aur rukiye ads mein! Timer: ${Math.floor(diff)}s/5s`);
+                        confirmBtn.style.animation = "shake 0.5s ease-in-out";
+                        setTimeout(() => confirmBtn.style.animation = "", 500);
+                    } else if (diff < 5) {
+                        const remaining = Math.ceil(5 - diff);
+                        showNotification(`⚠️ Jaldi wapas aa gaye! ${remaining} second aur ads mein rukiye. Current: ${Math.floor(diff)}s/5s`);
+                        confirmBtn.style.animation = "shake 0.5s ease-in-out";
+                        setTimeout(() => confirmBtn.style.animation = "", 500);
+                    }
+                };
+
+                btnContainer.appendChild(visitBtn);
+                btnContainer.appendChild(confirmBtn);
+
+                taskDiv.appendChild(taskHeader);
+                taskDiv.appendChild(bannerAd);
+                taskDiv.appendChild(btnContainer);
+                taskDiv.appendChild(progressBar);
+                taskList.appendChild(taskDiv);
+            });
+        }
+
+        // Initialize the game
+        initGame();
+
+        // Clean up on page unload
+        window.addEventListener('beforeunload', () => {
+            if (resetTimerInterval) {
+                clearInterval(resetTimerInterval);
+            }
+            Object.values(taskTimers).forEach(timer => clearInterval(timer));
+        });
+
+
+ // Initialize the game
+        initGame();
+
+function showRules() {
+    const dialog = document.getElementById('gameRulesDialog');
+    dialog.showModal();
+}
+
+function closeRules() {
+    const dialog = document.getElementById('gameRulesDialog');
+    dialog.close();
+}
+
+    </script>
+</body>
+</html>
